@@ -27,8 +27,6 @@ static NSString *kURL = @"https://api.twitch.tv/kraken/games/top?limit=100";
     
     self.title = NSLocalizedString(@"Exemplo de Sobrepeso", nil);
     
-//    [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"CustomTableViewCell"];
-    
     [self.refreshControl addTarget:self action:@selector(reloadData) forControlEvents:UIControlEventValueChanged];
     
     [self reloadData];
@@ -39,20 +37,28 @@ static NSString *kURL = @"https://api.twitch.tv/kraken/games/top?limit=100";
 - (void)reloadData {
     [self.refreshControl beginRefreshing];
     
+    //chamada em background
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
+        //requisição dos dados do servidor
         NSError *err = nil;
         NSArray *json = nil;
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:kURL]];
+        
+        //verifica a resposta do servidor
         if (data == nil) {
             err = [NSError errorWithDomain:NSStringFromClass([self class]) code:0
-                                  userInfo:@{NSLocalizedDescriptionKey: @"No data returned by server"}];
+                                  userInfo:@{NSLocalizedDescriptionKey: @"Nenhum dado retornou do servidor"}];
         }
+        //se for válida, tenta deserializá-la em um json
         else {
             json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err][@"top"];
         }
         
+        //manipula o resultado na main thread
         dispatch_async(dispatch_get_main_queue(), ^{
+            
+            //verifica se algo deu errado na requisição, ou na manipulação para transformar a resposta do servidor em um json
             if (err) {
                 [self.refreshControl endRefreshing];
                 
@@ -63,6 +69,7 @@ static NSString *kURL = @"https://api.twitch.tv/kraken/games/top?limit=100";
                 
             }
             else {
+                //converte os objetos do servidor no nosso modelo de objetos
                 NSMutableArray *items = [NSMutableArray array];
                 
                 for (NSDictionary *jsonItem in json) {
@@ -71,6 +78,7 @@ static NSString *kURL = @"https://api.twitch.tv/kraken/games/top?limit=100";
                     [items addObject:item];
                 }
                 
+                //salva os objetos e atualiza a table view
                 [self.refreshControl endRefreshing];
                 self.data = items;
                 [self.tableView reloadData];

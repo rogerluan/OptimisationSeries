@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5F32BEF1C003EFF009BEF6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32BEE1C003EFF009BEF6B /* main.m */; };
+		C5F32BF21C003EFF009BEF6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32BF11C003EFF009BEF6B /* AppDelegate.m */; };
+		C5F32BFA1C003EFF009BEF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F32BF91C003EFF009BEF6B /* Assets.xcassets */; };
+		C5F32BFD1C003EFF009BEF6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F32BFB1C003EFF009BEF6B /* LaunchScreen.storyboard */; };
+		C5F32C061C003F56009BEF6B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32C051C003F56009BEF6B /* TableViewController.m */; };
+		C5F32C0A1C003F96009BEF6B /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32C091C003F96009BEF6B /* CustomTableViewCell.m */; };
+		C5F32C0E1C003FAE009BEF6B /* TableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32C0D1C003FAE009BEF6B /* TableDataSource.m */; };
+		C5F32C111C003FB5009BEF6B /* TableCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32C101C003FB5009BEF6B /* TableCoordinator.m */; };
+		C5F32C141C003FBB009BEF6B /* TableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32C131C003FBB009BEF6B /* TableDelegate.m */; };
+		C5F32C171C003FCD009BEF6B /* TableData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32C161C003FCD009BEF6B /* TableData.m */; };
+		C5F32C1A1C003FD4009BEF6B /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F32C191C003FD4009BEF6B /* DataManager.m */; };
+		C5F32C1E1C0040D6009BEF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F32C1D1C0040D6009BEF6B /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5F32BEA1C003EFF009BEF6B /* Saudavel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saudavel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F32BEE1C003EFF009BEF6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5F32BF01C003EFF009BEF6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5F32BF11C003EFF009BEF6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C5F32BF91C003EFF009BEF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5F32BFC1C003EFF009BEF6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5F32BFE1C003EFF009BEF6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F32C041C003F56009BEF6B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C5F32C051C003F56009BEF6B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C5F32C081C003F96009BEF6B /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		C5F32C091C003F96009BEF6B /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		C5F32C0C1C003FAE009BEF6B /* TableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDataSource.h; sourceTree = "<group>"; };
+		C5F32C0D1C003FAE009BEF6B /* TableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDataSource.m; sourceTree = "<group>"; };
+		C5F32C0F1C003FB5009BEF6B /* TableCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCoordinator.h; sourceTree = "<group>"; };
+		C5F32C101C003FB5009BEF6B /* TableCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCoordinator.m; sourceTree = "<group>"; };
+		C5F32C121C003FBB009BEF6B /* TableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDelegate.h; sourceTree = "<group>"; };
+		C5F32C131C003FBB009BEF6B /* TableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDelegate.m; sourceTree = "<group>"; };
+		C5F32C151C003FCD009BEF6B /* TableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableData.h; sourceTree = "<group>"; };
+		C5F32C161C003FCD009BEF6B /* TableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableData.m; sourceTree = "<group>"; };
+		C5F32C181C003FD4009BEF6B /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		C5F32C191C003FD4009BEF6B /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		C5F32C1D1C0040D6009BEF6B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5F32BE71C003EFF009BEF6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5F32BE11C003EFF009BEF6B = {
+			isa = PBXGroup;
+			children = (
+				C5F32BEC1C003EFF009BEF6B /* Saudavel */,
+				C5F32BEB1C003EFF009BEF6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5F32BEB1C003EFF009BEF6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5F32BEA1C003EFF009BEF6B /* Saudavel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5F32BEC1C003EFF009BEF6B /* Saudavel */ = {
+			isa = PBXGroup;
+			children = (
+				C5F32C1D1C0040D6009BEF6B /* Main.storyboard */,
+				C5F32BF91C003EFF009BEF6B /* Assets.xcassets */,
+				C5F32C071C003F5E009BEF6B /* ViewController */,
+				C5F32C1B1C003FDF009BEF6B /* Model */,
+				C5F32BF01C003EFF009BEF6B /* AppDelegate.h */,
+				C5F32BF11C003EFF009BEF6B /* AppDelegate.m */,
+				C5F32BFB1C003EFF009BEF6B /* LaunchScreen.storyboard */,
+				C5F32BFE1C003EFF009BEF6B /* Info.plist */,
+				C5F32BED1C003EFF009BEF6B /* Supporting Files */,
+			);
+			path = Saudavel;
+			sourceTree = "<group>";
+		};
+		C5F32BED1C003EFF009BEF6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5F32BEE1C003EFF009BEF6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5F32C071C003F5E009BEF6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C5F32C041C003F56009BEF6B /* TableViewController.h */,
+				C5F32C051C003F56009BEF6B /* TableViewController.m */,
+				C5F32C0B1C003F9F009BEF6B /* Cell */,
+				C5F32C1C1C003FED009BEF6B /* Coordinators */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C5F32C0B1C003F9F009BEF6B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5F32C081C003F96009BEF6B /* CustomTableViewCell.h */,
+				C5F32C091C003F96009BEF6B /* CustomTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		C5F32C1B1C003FDF009BEF6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5F32C151C003FCD009BEF6B /* TableData.h */,
+				C5F32C161C003FCD009BEF6B /* TableData.m */,
+				C5F32C181C003FD4009BEF6B /* DataManager.h */,
+				C5F32C191C003FD4009BEF6B /* DataManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C5F32C1C1C003FED009BEF6B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C5F32C0C1C003FAE009BEF6B /* TableDataSource.h */,
+				C5F32C0D1C003FAE009BEF6B /* TableDataSource.m */,
+				C5F32C121C003FBB009BEF6B /* TableDelegate.h */,
+				C5F32C131C003FBB009BEF6B /* TableDelegate.m */,
+				C5F32C0F1C003FB5009BEF6B /* TableCoordinator.h */,
+				C5F32C101C003FB5009BEF6B /* TableCoordinator.m */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5F32BE91C003EFF009BEF6B /* Saudavel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F32C011C003EFF009BEF6B /* Build configuration list for PBXNativeTarget "Saudavel" */;
+			buildPhases = (
+				C5F32BE61C003EFF009BEF6B /* Sources */,
+				C5F32BE71C003EFF009BEF6B /* Frameworks */,
+				C5F32BE81C003EFF009BEF6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Saudavel;
+			productName = Saudavel;
+			productReference = C5F32BEA1C003EFF009BEF6B /* Saudavel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5F32BE21C003EFF009BEF6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Roger Oba";
+				TargetAttributes = {
+					C5F32BE91C003EFF009BEF6B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C5F32BE51C003EFF009BEF6B /* Build configuration list for PBXProject "Saudavel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5F32BE11C003EFF009BEF6B;
+			productRefGroup = C5F32BEB1C003EFF009BEF6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5F32BE91C003EFF009BEF6B /* Saudavel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5F32BE81C003EFF009BEF6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F32BFD1C003EFF009BEF6B /* LaunchScreen.storyboard in Resources */,
+				C5F32BFA1C003EFF009BEF6B /* Assets.xcassets in Resources */,
+				C5F32C1E1C0040D6009BEF6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5F32BE61C003EFF009BEF6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F32C171C003FCD009BEF6B /* TableData.m in Sources */,
+				C5F32BF21C003EFF009BEF6B /* AppDelegate.m in Sources */,
+				C5F32C0E1C003FAE009BEF6B /* TableDataSource.m in Sources */,
+				C5F32C061C003F56009BEF6B /* TableViewController.m in Sources */,
+				C5F32C111C003FB5009BEF6B /* TableCoordinator.m in Sources */,
+				C5F32C0A1C003F96009BEF6B /* CustomTableViewCell.m in Sources */,
+				C5F32C141C003FBB009BEF6B /* TableDelegate.m in Sources */,
+				C5F32C1A1C003FD4009BEF6B /* DataManager.m in Sources */,
+				C5F32BEF1C003EFF009BEF6B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5F32BFB1C003EFF009BEF6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5F32BFC1C003EFF009BEF6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5F32BFF1C003EFF009BEF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5F32C001C003EFF009BEF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5F32C021C003EFF009BEF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Saudavel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogeroba.Saudavel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5F32C031C003EFF009BEF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Saudavel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rogeroba.Saudavel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5F32BE51C003EFF009BEF6B /* Build configuration list for PBXProject "Saudavel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F32BFF1C003EFF009BEF6B /* Debug */,
+				C5F32C001C003EFF009BEF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F32C011C003EFF009BEF6B /* Build configuration list for PBXNativeTarget "Saudavel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F32C021C003EFF009BEF6B /* Debug */,
+				C5F32C031C003EFF009BEF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5F32BE21C003EFF009BEF6B /* Project object */;
+}

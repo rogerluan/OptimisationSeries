@@ -17,38 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobrepeso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd2-D7-odN">
-                                <rect key="frame" x="235" y="285" width="130" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saudável" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVA-K0-jFJ">
+                                <rect key="frame" x="245" y="285" width="111" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roger Oba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuz-Dj-YTR">
-                                <rect key="frame" x="284" y="315" width="81" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roger Oba" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOf-bD-UwJ">
+                                <rect key="frame" x="275" y="315" width="81" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sobrepeso" translatesAutoresizingMaskIntoConstraints="NO" id="APz-q5-n65">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saudavel" translatesAutoresizingMaskIntoConstraints="NO" id="JeE-0m-yiG">
                                 <rect key="frame" x="255" y="187" width="90" height="90"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Omk-f3-liX"/>
-                                    <constraint firstAttribute="width" constant="90" id="iiQ-4h-PzB"/>
+                                    <constraint firstAttribute="width" constant="90" id="9TZ-gY-utM"/>
+                                    <constraint firstAttribute="height" constant="90" id="q2E-NP-tSg"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bd2-D7-odN" firstAttribute="top" secondItem="APz-q5-n65" secondAttribute="bottom" constant="8" id="7fv-Ge-MpK"/>
-                            <constraint firstItem="Bd2-D7-odN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SuE-kv-vUK"/>
-                            <constraint firstItem="APz-q5-n65" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ThU-iY-apO"/>
-                            <constraint firstItem="xuz-Dj-YTR" firstAttribute="top" secondItem="Bd2-D7-odN" secondAttribute="bottom" id="sRi-ar-1jW"/>
-                            <constraint firstItem="xuz-Dj-YTR" firstAttribute="trailing" secondItem="Bd2-D7-odN" secondAttribute="trailing" id="x9B-yh-bNc"/>
-                            <constraint firstItem="Bd2-D7-odN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="yLs-fi-2pX"/>
+                            <constraint firstItem="dVA-K0-jFJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="16S-GH-3Al"/>
+                            <constraint firstItem="dVA-K0-jFJ" firstAttribute="top" secondItem="JeE-0m-yiG" secondAttribute="bottom" constant="8" id="Eah-z8-gmA"/>
+                            <constraint firstItem="ZOf-bD-UwJ" firstAttribute="trailing" secondItem="dVA-K0-jFJ" secondAttribute="trailing" id="IoM-Zc-tG6"/>
+                            <constraint firstItem="dVA-K0-jFJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="WJe-dL-5jd"/>
+                            <constraint firstItem="JeE-0m-yiG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="emM-FZ-XlE"/>
+                            <constraint firstItem="ZOf-bD-UwJ" firstAttribute="top" secondItem="dVA-K0-jFJ" secondAttribute="bottom" id="obq-aY-KOE"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -58,6 +58,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Sobrepeso" width="90" height="90"/>
+        <image name="saudavel" width="90" height="90"/>
     </resources>
 </document>
